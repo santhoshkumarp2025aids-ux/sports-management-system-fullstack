@@ -4,7 +4,7 @@ function Projects() {
   return (
     <>
     <h1 className="text-blue-500">
-        AdminLogin
+        this is the page for the Admin login
       </h1>
     </>
   )

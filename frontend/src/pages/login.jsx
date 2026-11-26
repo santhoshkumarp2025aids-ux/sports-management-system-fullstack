@@ -1,40 +1,30 @@
+
 import { useState } from 'react'
 
 function Login() {
-
-const [role, setRole] = useState("")
 const [email, setEmail] = useState("")
 const [password, setPassword] = useState("")
-function print(e) {e.preventDefault()
-console.log("Role: ", role)
-console.log("Email: ", email)
-console.log("Password: ", password)
+
+function print(e) {
+    e.preventDefault()
+    console.log("Email:", email)
+    console.log("Password:", password)
 }
 return (
     <>
-
     <h1>Sports Management System</h1>
-<br />
-<div>
-<form onSubmit={print}>
-<label>Email :</label>
-<input
-            placeholder="Enter your email"
-            required
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}/>
+    <h2>Login Page</h2>
+    <form onSubmit={print}>
+    <label>Email:</label>
+    <input type="email" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
+        <br /><br />
 
-    <br /><br />
-<label>Password :</label>
-<input placeholder="Enter your password" required type="password"
-value={password} onChange={(e) => setPassword(e.target.value)}/>
-<br /><br />
-<button type="submit">submit</button>
-</form>
-</div>
-</>
+        <label>Password:</label>
+        <input type="password" placeholder="Enter your password" value={password} onChange={(e) => setPassword(e.target.value)} required/>
+        <br /><br />
+        <button type="submit">Login</button>
+    </form>
+    </>
 )
 }
-
 export default Login
