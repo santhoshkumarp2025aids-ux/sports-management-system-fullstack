@@ -4,11 +4,18 @@ import { useState } from 'react'
 function Login() {
 const [email, setEmail] = useState("")
 const [password, setPassword] = useState("")
+<<<<<<< HEAD
 
 function print(e) {
     e.preventDefault()
     console.log("Email:", email)
     console.log("Password:", password)
+=======
+function print(e) {e.preventDefault()
+console.log("Role : ", role)
+console.log("Email: ", email)
+console.log("Password: ", password)
+>>>>>>> cfcfacf8e9d275f22a505f15107b5a01a165ed43
 }
 return (
     <>
@@ -27,4 +34,8 @@ return (
     </>
 )
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> cfcfacf8e9d275f22a505f15107b5a01a165ed43
 export default Login
