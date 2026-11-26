@@ -6,7 +6,7 @@ const [role, setRole] = useState("")
 const [email, setEmail] = useState("")
 const [password, setPassword] = useState("")
 function print(e) {e.preventDefault()
-console.log("Role: ", role)
+console.log("Role : ", role)
 console.log("Email: ", email)
 console.log("Password: ", password)
 }
