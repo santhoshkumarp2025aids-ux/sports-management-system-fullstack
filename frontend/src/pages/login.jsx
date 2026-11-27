@@ -4,28 +4,20 @@ import { useState } from 'react'
 function Login() {
 const [email, setEmail] = useState("")
 const [password, setPassword] = useState("")
-<<<<<<< HEAD
 
 function print(e) {
     e.preventDefault()
     console.log("Email:", email)
     console.log("Password:", password)
-=======
-function print(e) {e.preventDefault()
-console.log("Role : ", role)
-console.log("Email: ", email)
-console.log("Password: ", password)
->>>>>>> cfcfacf8e9d275f22a505f15107b5a01a165ed43
 }
 return (
     <>
     <h1>Sports Management System</h1>
-    <h2>Login Page</h2>
+    <h2>Login Page</h2><br/>
     <form onSubmit={print}>
     <label>Email:</label>
     <input type="email" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
-        <br /><br />
-
+        <br />
         <label>Password:</label>
         <input type="password" placeholder="Enter your password" value={password} onChange={(e) => setPassword(e.target.value)} required/>
         <br /><br />
@@ -34,8 +26,5 @@ return (
     </>
 )
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> cfcfacf8e9d275f22a505f15107b5a01a165ed43
 export default Login
