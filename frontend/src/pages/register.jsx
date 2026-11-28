@@ -19,7 +19,7 @@ function Register() {
             <h2>User Registration</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <label>Name:</label>
-                <input placeholder="Enter your name" type="text"
+                <input placeholder="Enter your Name." type="text"
                     {...register("name")}/>
                 <p>{errors.name?.message}</p>
 
